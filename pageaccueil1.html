@@ -5,21 +5,33 @@
 <link href="./mystyle.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Accueil</title>
+document.location = this.options[this.selectedIndex].value
 </head>
 
 <body>
-     <form method="post" action="/value.php">
-            <p> Quel ingrédient reste-t-il dans votre garde-manger?<br><br>
-                <select id="liste ingredients">
-                <option value="Carottes"> Carottes</option>
-                <option value="Comté">Comté</option>    
-                <option value="Courgettes">Courgettes</option>
-                <option value="Riz">Riz Blanc</option>
-             </select>
-             <input type="submit" value="C'est parti" title="valider pour accéder à la recette" />
+
+
+
+     <form method="post" action="#">
+            
+                    <select id="liste ingredients">
+                    <option value="/Users/lealuret/Documents/GitHub/ProjetFinal/BDD recettes/Carottes.html">Carottes</option>
+                    <option value="Comté" variable='Comté'>Comté</option>    
+                    <option value="Courgettes">Courgettes</option>
+                    <option value="Riz">Riz Blanc</option>
+             <input type="submit" class="variable" value="C'est parti" title="valider pour accéder à la recette">
             </p>
         </form>
             
+
+
+//Remove &agent_id= from form action since you don't need it there.
+//Since you are using PHP, then by posting the form to index.php you can catch agent_id with $_POST
+// Since you reference action on `form action` then value of $_GET['action'] will be contact_agent
+// $action = $_GET['action'];
+
+// Value of $_POST['agent_id'] will be selected option value */
+//$agent_id = $_POST['agent_id']; 
 
 
         <div class="container-fluid">

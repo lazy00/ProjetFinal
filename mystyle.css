@@ -127,7 +127,7 @@ h1 {
   max-width:100%
 }
 .bande {
-  background-color: rgb(241, 241, 247);
+  background-color: rgba(129, 183, 219, 0.404);
   height: 20%;
   bottom: 0px;
   margin : 0;
@@ -160,7 +160,7 @@ h4 {
   padding: 10px 20px;
   background-color: white;
   opacity: 0.45;
-  font-size: 5vw;
+  font-size: 2vw;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   max-width: 40%;
 }

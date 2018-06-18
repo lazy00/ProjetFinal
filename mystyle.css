@@ -3,180 +3,37 @@
   max-width: 40%;
   margin-bottom: 50px
 }
+
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   margin: 0px;
   padding: 0px;
 }
+
 nav  {
   width: 100%;
-  background-color: white;
-}
-nav > ul {
-  margin: 0px;
-  padding: 0px;
-}
-nav > ul::after {
-  content: "";
-  display: block;
-  clear:both;
-}
-nav > ul > li {
-  float:left;
-  position: relative;
-}
-nav > ul > li > a {
-  padding: 20px 30px;
-  color: rgb(66, 66, 66);
-}
-nav li {
   list-style-type: none;
 }
-.submenu {
-  display: none;
-  border-width:1px;
-  border-style:solid;
-  border-color:grey;
-  width:80%;
-  background-color:white;
-  margin-left: 10%;
-  margin-right:10%;
-}
-.ville {
-  display: none;
-  padding:1px;
-  font-size:12px;
-  color:grey
-}
-
-.area {
-  position:absolute;
-  width:15px;
-  height:15px;
-}
-.areanewyork {top:38%;left:29%}
-.areaparis{top:30%;left:47%}
-.arealisbonne{top:36%;left:45%}
-.areakyoto{top:38%;left:77%}
-.areashanghai{top:41%;left:74%}
-.arealima{top:67%;left:32%}
-.areasanfrancisco{top:39%;left:20%}
-.areakualalumpur{top:56%;left:70%}
-.areabangkok{top:53%;left:72%}
-.arealondres{top:28%;left:47%}
-.arearome{top:35%;left:50%}
-.areavienne{top:31%;left:51%}
-.areasingapour{top:58%;left:71%}
-.areajohannesburg{top:77%;left:53%}
-.areario{top:72%;left:38%}
-.areabali{top:64%;left:73%}
-.areasydney{top:77%;left:81%}
 
 nav a {
-  display: inline-block;
   text-decoration: none;
   color:grey;
 }
-nav li:hover .submenu {
-  display: inline-block;
-  position: absolute;
-  top: 100%;
-  left: 0px;
-  padding: 10px;
-  z-index: 10000;
-}
 
-nav li:hover .ville {
-  display: inline-block;
-  position: absolute;
-  z-index: 10000;
-}
-
-.pays {
-  padding: 0px 30px;
-  font-size: 13px;
-  color: grey;
-  text-align: initial;
-}
 .menu {
   font-size:18px;
   color:rgb(57, 59, 88);
   margin-top:10px;
   width:100%;
 }
-li.continent {
-  text-align: initial;
-  font-size:14px;
-  padding-bottom: 5px;
-  color:rgb(57, 59, 88)
-}
-h1 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-  height: 8px;
-  text-align:center;
-  font-size: 4vw;
-  color:rgb(57, 59, 88)
-}
-.poster {
-  width:100%;
-  min-width:502px;
-  margin-top:30px
-}
-.monde {
-  max-width:100%
-}
-.bande {
+
+.bande1 {
   background-color: rgba(129, 183, 219, 0.404);
-  height: 20%;
   bottom: 0px;
   margin : 0;
 }
-.prochainesdestinations {
- padding-top:20px;
- font-size:20px;
- color:rgb(57, 59, 88)
-}
-.imageprochaine {
- width: 250px;
- height: 165px;
- align-content:center;
- float:center
- }
-.villeprochaine {
- padding-top: 0px;
- text-align:center;
- float:center;
- }
-.motdefin {
- font-size:12px;
- color:rgb(57, 59, 88);
- text-align: center; 
-}
-h4 {
-  position: absolute;
-  top: 40px;
-  left: 30px;
-  padding: 10px 20px;
-  background-color: white;
-  opacity: 0.45;
-  font-size: 2vw;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  max-width: 40%;
-}
-h4.lima {color:peru;}
-h4.lisbonne{color:green}
-h4.shanghai{color:red}
-h4.newyork {color: black;}
-h4.singapour {color: rgb(56, 91, 250);}
-h4.bali {color: rgb(253, 45, 30);}
-h4.vienne {color: rgb(255, 94, 0);}
-h4.rio { color: rgb(23, 212, 33);}
-h4.bangkok { color: rgb(250, 56, 56);}
 
-.section {
-  margin-top:50px;
-}
+
 h2 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
   font-weight: 300;
@@ -185,17 +42,6 @@ h2 {
   font-size: 30px;
   color:black
 }
-.adresse, .restaurant {
-  height: 8px;  
-  position: relative;
-  width: 100%;
-  left:0px;
-  padding:20px;
-}
-
-.restaurant, .villeprochaine {
-  font-size:20px
-}
 
 p {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
@@ -203,89 +49,7 @@ p {
   text-align: center;
   font-size:15px
 }
-.image {
-  width:502px;
-  max-width:100%;
-  height:333px;
-  align-content: center;
-  position:relative;
-}
 
-.carte {
-  border-width:1px;
-  border-style:solid;
-  border-color:black;
-  padding:10px;
-  width: 60px;
-  display: inline-block;
-  margin-top:5px;
-}
-.prix {
-  border-width:1px;
-  border-style:solid;
-  padding:10px;
-  width: 60px;
-  border-color:black;
-  display: inline-block;
-  margin-top:5px;
-}
-.tag {
-  padding:10px;
-  display: inline-block;
-  margin-top:5px;
-  width:350px;
-}
-
-#searchbar {
-width:auto;
-height:auto;
-align:center;
-}
-
-.formulaire {
-width:60%; height:35px;
-background-image: url(images/searchbar_button.png);
-background-repeat: no-repeat;
-}
-
-.champ{width:90%; height:35px;}
-
-.bouton {
-  background-image: url(images/searchbar_button.png);
-  background-repeat: no-repeat;
-  width: 35px;
-  height: 35px; padding: 0;
-  float:right;
-  width:10%
-}
-
-.champ, .bouton {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-  height: 35px;
-  text-align:center;
-  font-size:14px;
-  color:rgb(57, 59, 88)
-}
-
-.champ {
-font-style: italic;
-float:left;
-}
-
-.bouton{float:right}
-
-.img-team {
-  width: 470px;
-  max-height: 600px;
-}
-.apropos {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
-  font-weight: 300;
-  float:center;
-  text-align: center;
-  padding: 50px;
-}
 h3 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
   float:center;
@@ -294,24 +58,13 @@ h3 {
   text-align: center;
   color: rgb(241, 97, 0);
 }
-#thumbs {
-  width: 450px;
-  height: 600px;
+
+.menuderoulant {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
+  font-size: 22px;
+  text-align: center;
+  border-style: solid;
+  border-width:10px;
+  border-color:rgba(241, 96, 0, 0.205);
+
 }
-
-.tag1 {
-  padding: 0px 100px;
-  font-size: 13px;
-  color: grey;
-  text-align: center}
-
-  .smallrightlist {
-    bottom: 5px;
-    float: none;
-    bottom: 0px;
-    border: 1px solid #276D0A;
-    margin: 2px;
-    width: 175px;
-    height: 50px;
-    overflow: scroll;
-    text-align: center;

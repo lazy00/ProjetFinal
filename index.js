@@ -12,21 +12,29 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-app.get("/recette1", function (req, res) {
-    res.render('recette1', {});
+app.get("/Carottes", function (req, res) {
+    res.render('Carottes', {});
 } );
 
-app.get("/albm", function (req, res) {
-    res.render('albm',{});
+app.get("/Courgette", function (req, res) {
+    res.render('Courgette', {});
 } );
 
-app.post("/gameresult", function (req, res) {
-    let numberUser1 = parseInt(req.body.numberUser1);
-    let numberComputer = parseInt(Math.random()*100);
-    let winningUser = (Math.abs(numberUser1 - numberComputer)<Math.abs(numberUser2 - numberComputer))?"User 1":"User 2";
-
-    res.render('gameresult', {numberUser1, numberUser2, numberComputer, winningUser});
+app.get("/Comte", function (req, res) {
+    res.render('Comte', {});
 } );
+
+app.get("/pageaccueil", function (req, res) {
+    res.render('pageaccueil',{});
+} );
+
+//app.post("/gameresult", function (req, res) {
+  //  let numberUser1 = parseInt(req.body.numberUser1);
+   // let numberComputer = parseInt(Math.random()*100);
+   // let winningUser = (Math.abs(numberUser1 - numberComputer)<Math.abs(numberUser2 - numberComputer))?"User 1":"User 2";
+
+   // res.render('gameresult', {numberUser1, numberUser2, numberComputer, winningUser});
+//} );
 
 app.get('/', function (req, res) {
     res.render('home', {maintenant: (new Date()).toLocaleTimeString(), students: [{name:"Marie","sex":"female"},{"name":"Joseph","sex":"male", honors:true},{"name":"Pierre","sex":"male"}]});

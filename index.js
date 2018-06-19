@@ -16,9 +16,16 @@ app.get("/Carottes", function (req, res) {
     res.render('Carottes', {});
 } );
 
+app.get("/contact", function (req, res) {
+    res.render('contact', {});
+} );
+
 app.get("/Courgette", function (req, res) {
     res.render('Courgette', {});
 } );
+
+//app.get('/courgettes');
+//;
 
 app.get("/Comte", function (req, res) {
     res.render('Comte', {});
@@ -36,22 +43,22 @@ app.get("/pageaccueil", function (req, res) {
    // res.render('gameresult', {numberUser1, numberUser2, numberComputer, winningUser});
 //} );
 
-app.get('/', function (req, res) {
-    res.render('home', {maintenant: (new Date()).toLocaleTimeString(), students: [{name:"Marie","sex":"female"},{"name":"Joseph","sex":"male", honors:true},{"name":"Pierre","sex":"male"}]});
-});
+//app.get('/', function (req, res) {
+   // res.render('home', {maintenant: (new Date()).toLocaleTimeString(), students: [{name:"Marie","sex":"female"},{"name":"Joseph","sex":"male", honors:true},{"name":"Pierre","sex":"male"}]});
+//});
 
-app.get('/produits/:category', function (req, res) {
-    let products = [];
-    if(req.params.category === "mobile"){
-        products = [{title:"iPhone X", description:"Cool and expensive"},{title:"Samsung S9", description:"Cool and less expensive"},{title:"OnePlus 6", description:"Cheap"}]
-    } else if(req.params.category === "cheese"){
-        products = [{title:"Compté", description:"Savoureux"},{title:"Emmental", description:"Fondant"},{title:"Camembert", description:"Odorant"}]
-    }
+//app.get('/produits/:category', function (req, res) {
+    //let products = [];
+    //if(req.params.category === "mobile"){
+    //    products = [{title:"iPhone X", description:"Cool and expensive"},{title:"Samsung S9", description:"Cool and less expensive"},{title:"OnePlus 6", description:"Cheap"}]
+    //} else if(req.params.category === "cheese"){
+    //    products = [{title:"Compté", description:"Savoureux"},{title:"Emmental", description:"Fondant"},{title:"Camembert", description:"Odorant"}]
+    //}
 
-    res.render('produit', {products:products});
-});
+    //res.render('produit', {products:products});
+//});
 
-app.get('/mapage', (req, res) => res.send('Tu ne devrais pas être là!!!'));
-app.use(express.static('client'));
+//app.get('/mapage', (req, res) => res.send('Tu ne devrais pas être là!!!'));
+//app.use(express.static('client'));
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'));

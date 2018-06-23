@@ -35,8 +35,8 @@ app.get("/pageaccueil", function (req, res) {
     res.render('pageaccueil',{});
 } );
 
-app.get("/pageaccueil0", function (req, res) {
-    res.render('pageaccueil0',{});
+app.get("/pageaccueilzero", function (req, res) {
+    res.render('pageaccueilzero',{});
 } );
 
 //app.post("/gameresult", function (req, res) {

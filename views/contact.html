@@ -46,9 +46,20 @@ h4 {
 p {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
     font-weight: 300;
-    font-size:18px;
+    font-size:1.5vw;
     margin-left : 50px;
   }
+
+.formulaire {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
+    font-size:2vw;
+    padding:10px;
+    margin:0 auto;
+    margin-left : 50px;
+    margin-right : 50px;
+    text-align: center;
+
+}
 
 a {
     color:rgba(173, 58, 23, 0.582)
@@ -129,8 +140,7 @@ a {
 <br>
 <br>
 
-<a href="mailto:emma.diop@essec.edu">Nous écrire</a></li>
-<div style="width:640px; padding:10px; margin:0 auto;">
+<div class="formulaire">
 <p>Pour toute question ou suggestion, vous pouvez également remplir ce formulaire pour nous contacter. Nous vous répondrons dans les meilleurs délais !</p>
 <form action="" method="post">
     <div style="width:600px; float:left;">
@@ -147,7 +157,15 @@ a {
         <textarea name="message" required cols="35" rows="5" style='width:300px'></textarea>
 		<br>
         <br>
-    <input name="" type="submit" value="Envoyer mon message" style='width:300px' />
+    <div class="button">
+        <button type="submit">Envoyer le message</button>
+    </div>
+    <a href="mailto:emma.diop@essec.edu">Nous écrire</a></li>
+
+
+    
+        
+    </div>
     <br><br>
     </div>
     </form>

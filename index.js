@@ -27,8 +27,8 @@ app.get("/Courgette", function (req, res) {
 //app.get('/courgettes');
 //;
 
-app.get("/Comte", function (req, res) {
-    res.render('Comte', {});
+app.get("/Omelette", function (req, res) {
+    res.render('Omelette', {});
 } );
 
 app.get("/pageaccueil", function (req, res) {

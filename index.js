@@ -35,6 +35,10 @@ app.get("/pageaccueil", function (req, res) {
     res.render('pageaccueil',{});
 } );
 
+app.get("/pageaccueil0", function (req, res) {
+    res.render('pageaccueil0',{});
+} );
+
 //app.post("/gameresult", function (req, res) {
   //  let numberUser1 = parseInt(req.body.numberUser1);
    // let numberComputer = parseInt(Math.random()*100);

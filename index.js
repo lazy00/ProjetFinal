@@ -39,6 +39,14 @@ app.get("/pageaccueilzero", function (req, res) {
     res.render('pageaccueilzero',{});
 } );
 
+app.get("/Categories", function (req, res) {
+    res.render('Categories',{});
+} );
+
+app.get("/CanardLaqué", function (req, res) {
+    res.render('CanardLaqué',{});
+} );
+
 //app.post("/gameresult", function (req, res) {
   //  let numberUser1 = parseInt(req.body.numberUser1);
    // let numberComputer = parseInt(Math.random()*100);

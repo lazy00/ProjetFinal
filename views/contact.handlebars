@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Poiret+One" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<style>
+    <style>
 
 /* titres */ h1 {
 font-family: 'Poiret One', cursive;
@@ -34,7 +34,6 @@ color:rgb(43, 20, 13);
     border-width:0px;
 }
 
-
 /* photos de nous */ .img-membre {
 max-width:70%;
 width: 500px;
@@ -46,14 +45,21 @@ max-width:30%;
 width: 500px;
 }
 
-h3 {
+/* logo en haut */ .logo1 {
+max-width:25%;
+width: 500px;
+}
+
+/* retour page d'accueil*/ h3 {
     text-transform: uppercase;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: 'Poiret One', cursive;
     font-weight: 600 ;
-    height: 8px;
+    height: 30px;
     text-align:center;
     font-size: 2vw;
-    color:rgba(173, 58, 23, 0.582)
+    color:rgba(173, 58, 23, 0.582);
+    font-style:italic;
+    text-decoration:underline;
 }
     
 /* description texte */ h4 {
@@ -61,11 +67,12 @@ h3 {
     font-weight: 130;
     font-size:20px;
     font-size: 2vw;
-    height: 8px;
+    height: 20px;
     text-align:center;
     color:rgb(43, 20, 13);
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 20px;
 }
 
 p {
@@ -75,15 +82,23 @@ p {
     margin-left : 50px;
 }
 
-.formulaire {
+/* formulaire */ .formulaire {
     font-family: 'Hind Siliguri', sans-serif;
-    font-size:2vw;
-    padding:10px;
+    font-size:1.5vw;
     margin :10px;
-    margin-left : 50px;
-    margin-right : 50px;
+    margin-left : 10vw;
+    margin-right : 10vw;
     text-align: center;
+    padding:10px;
 }
+
+/* cases formulaire */ .case {
+    border-bottom:2px solid #e7e7e7;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
 
 a {
     color:rgba(173, 58, 23, 0.582)
@@ -95,113 +110,106 @@ bottom: 0;
 min-height:100%
      }
 
-body {
-min-height:100%
-     }
 
-.bande {
-    background-color: rgba(90, 36, 18, 0.178);
+/*bande en bas et en haut*/ .bande {
+    background-color: rgba(129, 183, 219, 0.404);
     height: 20%;
     bottom: 0px;
     margin : 0;
+    text-align:center;
   }
 
-.fond {
-    background-color: rgba(90, 36, 18, 0.041);
-    bottom: 0px;
-    margin : 0;
-  }
-
-.sanspuce {
-    list-style-type: none;
-    line-height: 20pt;
-    margin-left : 5px;
-}
-
-.puceronde {
-    list-style-type: circle;
-}
-
-
-
-.tableau-bottom{
-    border-width:20px;
-    border-style:none none none none;
-    border-color: rgba(90, 36, 18, 0.25);
-    width:35%;
-    margin-right:30px;
-  }
 
 </style>
 </head>
 
-
 <body>
-        
+
+<div class="bande">
+<img class="logo1" src="./logo.jpg" align="left">
+<br>
+<br>
+<br>
+</div>
+
 <br>
 <br>
 <h1>- Qui sommes nous ? -</h1>
-
 <br>
-<h4>Nous sommes trois étudiantes d'école de commerce, engagées dans la lutte contre le gaspillage et à la recherche de solutions concrètes pour rendre le quotidien de tous plus responsable, facilement.</h4>
+<h4>Nous sommes trois étudiantes en école de commerce, engagées dans la lutte contre le gaspillage et à la recherche de solutions concrètes pour rendre le quotidien de tous plus responsable, facilement.</h4>
 <br>
 <br>
 <table class="tableau-photos">
 <tr>
     <td>
-    <img class="img-membre" src="Emma.jpg" alt="photo">
+    <img class="img-membre" src="Emma.jpg" alt="photo d'Emma">
     </td>
     <td>
-    <img class="img-membre" src="Meng.jpg" alt="photo">
+    <img class="img-membre" src="Meng.jpg" alt="photo de Meng">
     </td>
     <td>
-    <img class="img-membre" src="Lea.jpg" alt="photo">
+    <img class="img-membre" src="Lea.jpg" alt="photo de Léa">
     </td>
 </tr>
 <tr>
-    <td align="center"><br>Emma Diop</td>
-    <td align="center"> <br>Meng Duan</td>
-    <td align="center"><br>Léa Luret</td>
+    <td align="center">
+        <br>
+        Emma Diop
+        <br>
+        <a href="mailto:emma.diop@essec.edu"><i>Lui écrire</i></a>
+    </td>
+    <td align="center">
+        <br>
+        Meng Duan
+        <br>
+        <a href="mailto:meng.duan@essec.edu"><i>Lui écrire</i></a>
+    </td>
+    <td align="center">
+        <br>
+        Léa Luret
+        <br>
+        <a href="mailto:lea.luret@essec.edu"><i>Lui écrire</i></a>
+    </td>
 </tr>
 </table>
-
+<br>
 <h1 id=nouscontacter>- Nous contacter -</h1>
 <br>
 <br>
-
-<div class="formulaire">
 <h4>Pour toute question ou suggestion, vous pouvez également remplir ce formulaire pour nous contacter. Nous vous répondrons dans les meilleurs délais !</h4>
-<form action="" method="post">
-    <div style="width:600px; float:left;">
-    <strong>Votre nom</strong><br>
-        <input name="name" type="text" required value="" style='width:300px' />
-        <br>
-    <strong>Votre email </strong><br>
-        <input name="email" type="email" required value="" style='width:300px' />
-		<br>
-    <strong>Le sujet de votre message </strong><br>
-        <input name="subject" type="text" required value="" style='width:300px' />
-        <br>
-    <strong>Votre message </strong><br>
-        <textarea name="message" required cols="35" rows="5" style='width:300px'></textarea>
-		<br>
-        <br>
-    <div class="button">
-        <button type="submit">Envoyer le message</button>
-    </div>
-    <a href="mailto:emma.diop@essec.edu">Nous écrire</a></li>
+<br>
+<br>
+<br>
 
-
-    
-        
-    </div>
+<form class="formulaire" action="mailto:lea.luret@essec.edu" method="post">
+    <label class="required" for="name"><strong>Votre nom</strong></label>
+        <br>
+        <input class="case" name="name" type="text" required value="" style='width:300px' />
+        <br>
+        <br>
+    <label class="required" for="email"><strong>Votre email </strong></label>
+        <br>
+        <input class="case" name="email" type="email" required value="" style='width:300px' />
+		<br>
+        <br>
+    <label class="required" for="subject"><strong>Le sujet de votre message </strong></label>
+        <br>
+        <input class="case" name="subject" type="text" required value="" style='width:300px' />
+        <br>
+        <br>
+    <label class="required" for="message"><strong>Votre message </strong></label>
+        <br>
+        <textarea class="case" name="message" required cols="35" rows="5" style='width:300px'></textarea>
+		<br>
+        <br>
+    <input class="button" type="submit" value="Envoyer le message">
     <br><br>
-    </div>
     </form>
+
 </body>
 
 <footer>
-<div class="fond">
+<div class="bande">
 <br>
 <a href="pageaccueil"><h3>Retour page d'accueil</h3></a> 
 <br>

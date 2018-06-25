@@ -4,20 +4,161 @@
         <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="stylebdd.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Poiret+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
         <title>Recette</title>
         <style>
 
 .tableau {
 margin-left:5vw;
 margin-right:5vw;
+width:100%;
+}
+
+h2
+{
+text-transform: uppercase;
+text-align:left;
+font-family: 'Poiret One', cursive;
+margin-left : 30px;
+}
+
+.existant{
+color:black;
+font-size: 3vw;
+    }
+
+.inexistant{
+color:rgba(112, 112, 112, 0.575);
+font-size: 1.2vw;
+
+    }
+
+p
+{
+text-align:left;
+font-size: 1.5vw;
+margin-left : 30px;
+}
+
+.titre{
+font-weight: 700 ;
+}
+      
+a{
+text-decoration: none;
+color:rgba(173, 58, 23, 0.582);
+}
+
+footer {
+    background-color: rgba(124, 34, 4, 0.945);
+    padding-top: 15px;
+    }
+
+.footertable {
+margin-left:5vw;
+margin-right:5vw;
 width:90%;
 }
-        </style>
-        </head>
+
+h3 {
+    text-transform: uppercase;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600 ;
+    height: 8px;
+    text-align:left;
+    font-size: 2vw;
+    color:rgb(218, 205, 202)
+    }
+    
+</style>
+</head>
+
 
 <body>
 
 <table class="tableau">
-
+<tr>
+<td>
+<h2 class="inexistant">A</h2>
+<h2 class="existant">B</h2>
+<br>
+<p><div class="titre">Betterave :</div>Gateau à la betterave 
+<br><i>(bientôt disponible)</i></p>
+<br>
+<h2 class="existant">C</h2>
+<br>
+<p><div class="titre">Carotte :</div>
+<a href="carottes">tarte tatin aux carottes</a>
+</p>
+<br>
+<p><div class="titre">Courgette :</div>
+<a href="courgette">gratin aux courgettes</a>
+</p>
+<br>
+<h2 class="inexistant">D</h2>
+<h2 class="inexistant">E</h2>
+<h2 class="inexistant">F</h2>
+<h2 class="inexistant">G</h2>
+<h2 class="inexistant">H</h2>
+<h2 class="inexistant">I</h2>
+</td>
+<td>
+<h2 class="inexistant">J</h2>
+<h2 class="inexistant">K</h2>
+<h2 class="inexistant">L</h2>
+<h2 class="inexistant">M</h2>
+<h2 class="inexistant">N</h2>
+<h2 class="existant">O</h2>
+<br>
+<p><div class="titre">Oeufs :</div>
+<a href="oeuf">omelette au fromage</a>
+</p>
+<br>
+<h2 class="existant">P</h2>
+<br>
+<p><div class="titre">Poivron :</div>tortilla de pommes de poivrons au four
+<br><i>(bientôt disponible)</i></p>
+<br>
+<h2 class="inexistant">Q</h2>
+<h2 class="inexistant">R</h2>
+</td>
+<td>
+<h2 class="existant">S</h2>
+<br>
+<p><div class="titre">Saumon :</div>lasagnes de saumon 
+<br><i>(bientôt disponible)</i></p>
+<br>
+<h2 class="inexistant">T</h2>
+<h2 class="inexistant">U</h2>
+<h2 class="inexistant">V</h2>
+<h2 class="inexistant">W</h2>
+<h2 class="inexistant">X</h2>
+<h2 class="existant">Y</h2>
+<p><div class="titre">Yaourt :</div>
+<a href="yaourt">Cannelés salés</a>
+</p>
+<h2 class="inexistant">Z</h2>
+</td>
+</tr>
 </table>
+</body>
+
+<footer>
+<table class="footertable">
+    <td width=60%>
+<a href="pageaccueil"><h3 style="text-align: left">Retour page d'accueil</h3></a> 
+<br>
+<br>
+</td>
+    <td width=15%>
+<a href="contact"><h3 style="text-align: left">A propos</h3></a> 
+<br>
+<br>
+</td>
+    <td width=25%>
+<a href="contact#nouscontacter"><h3 style="text-align: left">Nous contacter</h3></a> 
+<br>
+<br>
+    </td>
+    </table>
+</footer>

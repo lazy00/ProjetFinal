@@ -40,6 +40,11 @@ app.get("/Sommaire", function (req, res) {
     res.render('Sommaire',{});
 } );
 
+app.get("/Recommandation", function (req, res) {
+    res.render('Recommandation',{});
+} );
+
+
 //app.post("/gameresult", function (req, res) {
   //  let numberUser1 = parseInt(req.body.numberUser1);
    // let numberComputer = parseInt(Math.random()*100);

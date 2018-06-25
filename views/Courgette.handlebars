@@ -4,40 +4,53 @@
         <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="stylebdd.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Poiret+One" rel="stylesheet">
         <title>Recette</title>
         <style>
-            h1 {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 600 ;
+
+/*titre*/ h1 {
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
     height: 8px;
     text-align:center;
     font-size: 4vw;
     color:rgb(43, 20, 13)
 }
 
-h2 {
+/*titre étapes*/ h2 {
 text-transform: uppercase;
-font-size: 30px;
-font-size: 3vw;
-margin-left : 50px;
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+text-align:left;
+font-size: 2.5vw;
+font-family: 'Poiret One', cursive;
+margin-left : 30px;
 }
 
 
-h3 {
+/*titre ingrédients*/ h5 {
+text-transform: uppercase;
+text-align:left;
+font-size: 2vw;
+color:rgba(90, 36, 18, 0.8);
+margin-left : 25px;
+font-family: 'Poiret One', cursive;
+}
+
+/*taleau ingrédients*/ .table-ingredients {
+    vertical-align: top;
+}
+
+/*retour page d'accueil*/h3 {
     text-transform: uppercase;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: 'Poiret One', cursive;
     font-weight: 600 ;
     height: 8px;
-    text-align:center;
+    text-align:left;
     font-size: 2vw;
-    color:rgba(173, 58, 23, 0.582)
+    color:rgb(218, 205, 202)
     }
-    
-    
 
-h4 {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+/*description sous le titre*/ h4 {
+    font-family: 'Poiret One', cursive;
     font-weight: 130;
     font-size: 2vw;
     height: 8px;
@@ -46,12 +59,15 @@ h4 {
     color:rgb(117, 54, 35)
   }
 
-p {
+/*description étapes*/ p {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
     font-weight: 300;
-    font-size:18px;
-    font-size:2vw;
-    margin-left : 50px;
+    font-size:1.7vw;
+    text-align:left;
+    margin-left : 30px;
+    margin-bottom : 50px;
+
+
   }
 
 a {
@@ -67,8 +83,6 @@ a {
 
 .fond {
     background-color: rgba(90, 36, 18, 0.041);
-    bottom: 0px;
-    margin : 0;
   }
 
 .img-recette {
@@ -81,98 +95,167 @@ a {
 
 .inforecette {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size:2.7vh;
     color:rgba(90, 36, 18, 0.8);
 }
 
 .sanspuce {
     list-style-type: none;
-    line-height: 20pt;
-}
+    line-height: 45px;
+    border-width:10px;
+    border-color: rgba(90, 36, 18, 0.25);
+    vertical-align:bottom;
+    border-style:double;
+    }
 
 .puceronde {
     margin-left : 5px;
     list-style-type: circle;
-}
-
-.tableau-top{
-  border-width:20px;
-  border-style:dotted dotted dotted dotted;
-  border-color: rgba(90, 36, 18, 0.25);
-  width:35%;
-  padding-right : 50px;
-}
-
-.tableau-bottom{
-    border-width:20px;
-    border-style:none none none none;
-    border-color: rgba(90, 36, 18, 0.25);
-    width:35%;
-    margin-right:30px;
   }
 
-        </style>
+.libelleinfo {
+    text-align: right;
+    font-size: 18px;
+    color:rgba(43, 20, 13, 0.877);
+    font-family: 'Hind Siliguri', sans-serif;
+    }
+
+.descriptioninfo {
+    text-align: left;
+    font-size: 27px;
+    font-family: 'Poiret One', cursive;
+    padding-left: 10px}
+
+footer {
+    background-color: rgba(124, 34, 4, 0.945);
+    padding-top: 15px;
+    }
+
+.footertable {
+margin-left:5vw;
+margin-right:5vw;
+width:90%;
+}
+
+    </style>
     </head>
 
     <body>
 
-        
- <div class="bande">
-<br>
-<h1>Gratin aux courgettes</h1>
-<br><br>
-<h4>Un plat facile et rapide à réaliser, qui accompagnera parfaitement vos viandes et poissons.</h4>
 
-<br><br><table>
+<div class="bande"><br>
+<h1>Gratin aux courgettes</h1>
+<br><br><h4>Un plat facile et rapide à réaliser, qui nécessite peu d'ingrédients.</h4>
+ 
+<br><br>
+
+<table>
 <tr>
     <td rowspan=2>
-    <img class="img-recette" src=".\courgettes.jpg" alt="Cette délicieuse recette réjouira toute la famille">
+    <img class="img-recette" src=".\courgettes.jpg">
     </td>
-    <td class="tableau-top">
-    <ul class="inforecette sanspuce">
-        <li><b>Nombre de personnes :</b> 4</li>
-        <li><b>Temps de préparation :</b> 30 minutes</li>
-        <li><b>Calories :</b> 644</li>
-     </ul>
-    </td>
-    </tr>
-<tr>
-               <td class="tableau-bottom">
-                <ul class="inforecette puceronde">
-                <b><u>Ingrédients :</b></u>
-                <br>
-                <br>
-                <li><b>4 courgettes</b></li> <br>
-                <li><b>3 oignons</b></li>
-                <br><li><b>100 g de gruyère râpé</b></li>
-                <br><li><b>2 cuillères à soupe de crème fraîche</b></li>
-                <br><li><b>1 noix de beurre</b></li>
-                <br><li><b>Sel</b></li>
-                <br><li><b>Poivre</b></li>
-                </ul>
+    <td>
+        <table class="inforecette sanspuce">
+            <tr>
+                <td class="libelleinfo">
+                    Nombre de personnes  
+                </td>
+                <td class="descriptioninfo">
+                    <b>4</b>
                 </td>
             </tr>
-            </table>
-            </div>
-            <td>
-  
-            <br><h2>étape 1</h2>
-            <p>Emincer les oignons.</p>
-            <h2>étape 2</h2>
-            <p>Les faire fondre dans le beurre</p>
-            <h2>étape 3</h2>
-            <p>Râper 4 courgettes avec leur peau.</p>
-            <h2>étape 4</h2>
-            <p>Les ajouter aux oignons.</p>
-            <h2>étape 5</h2>
-            <p>Préchauffer le four à 200°C (thermostat 6-7).</p>
-            <h2>étape 6</h2>
-            <p>Mélanger le gruyère râpé, les oeufs, la crème fraîche, puis saler et poivrer.</p>
-            <h2>étape 7</h2>
-            <p>Mettre les courgettes dans un plat et verser par dessus la sauce et faire à four chaud pendant 15 min.</p>
-        </td>
-        <br><br>
-        <a href="pageaccueil"><h3>Retour page d'accueil</h3></a> 
-        <br>
-    </body>
+
+            <tr>
+                <td class="libelleinfo">
+                    Temps de préparation
+                </td>
+                <td class="descriptioninfo">
+                    <b>  30 minutes</b>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="libelleinfo">
+                    Difficulté
+                </td>
+                <td class="descriptioninfo">
+                    <b>  Facile</b>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="libelleinfo">
+                    Calories
+                </td>
+                <td class="descriptioninfo">
+                    <b>644</b>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+</table>
+</div>
+
+<div class="fond">
+<br>
+<br>
+<table>
+    <tr>
+    <td class="table-ingredients">
+
+    <h5>Ingrédients</h5>
+    <br>
+    <ul class="inforecette puceronde">
+    <li><b>4 courgettes</b></li> <br>
+    <li><b>3 oignons</b></li>
+    <br><li><b>100 g de gruyère râpé</b></li>
+    <br><li><b>2 cuillères à soupe de crème fraîche</b></li>
+    <br><li><b>1 noix de beurre</b></li>
+    <br><li><b>Sel</b></li>
+    <br><li><b>Poivre</b></li>
+    </ul>
+    </td>
+    <td>
+<h2>étape 1</h2>
+<p>Emincer les oignons.</p>
+<h2>étape 2</h2>
+<p>Les faire fondre dans le beurre.</p>
+<h2>étape 3</h2> 
+<p>Râper 4 courgettes avec leur peau.</p>
+<h2>étape 4</h2> 
+<p>Les ajouter aux oignons.</p>
+<h2>étape 5</h2> 
+<p>Préchauffer le four à 200°C (thermostat 6-7).</p>
+<h2>étape 6</h2> 
+<p> Mélanger le gruyère râpé, les oeufs, la crème fraîche, puis saler et poivrer. </p>
+<h2>étape 7</h2>
+<p>Mettre les courgettes dans un plat et verser par dessus la sauce et faire à four chaud pendant 15 min.</p>
+<br>
+<br>
+</td>
+</tr>
+</div>
+</table>
+
+<footer>
+<table class="footertable">
+    <td width=60%>
+<a href="pageaccueil"><h3 style="text-align: left">Retour page d'accueil</h3></a> 
+<br>
+<br>
+</td>
+    <td width=15%>
+<a href="contact"><h3 style="text-align: left">A propos</h3></a> 
+<br>
+<br>
+</td>
+    <td width=25%>
+<a href="contact#nouscontacter"><h3 style="text-align: left">Nous contacter</h3></a> 
+<br>
+<br>
+    </td>
+    </table>
+</footer>
+
+</body>
 </html>

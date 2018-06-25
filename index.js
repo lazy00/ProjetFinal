@@ -24,23 +24,20 @@ app.get("/Courgette", function (req, res) {
     res.render('Courgette', {});
 } );
 
-//app.get('/courgettes');
-//;
-
-app.get("/Omelette", function (req, res) {
-    res.render('Omelette', {});
+app.get("/oeuf", function (req, res) {
+    res.render('oeuf', {});
 } );
 
 app.get("/pageaccueil", function (req, res) {
     res.render('pageaccueil',{});
 } );
 
-app.get("/pageaccueilzero", function (req, res) {
-    res.render('pageaccueilzero',{});
+app.get("/yaourt", function (req, res) {
+    res.render('yaourt',{});
 } );
 
-app.get("/Recommendation", function (req, res) {
-    res.render('Recommendation',{});
+app.get("/Sommaire", function (req, res) {
+    res.render('Sommaire',{});
 } );
 
 //app.post("/gameresult", function (req, res) {
